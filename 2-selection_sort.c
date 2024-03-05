@@ -1,6 +1,4 @@
 #include "sort.h"
-
-
 /**
  * selection_sort - sort array
  * @array: array
@@ -11,7 +9,7 @@ void selection_sort(int *array, size_t size)
 	size_t minIdx, i, j;
 	int tmp;
 
-	if (!array || !size || size < 2)
+	if (!array || size < 2)
 	return;
 
 	for (i = 0; i < size - 1; i++)
