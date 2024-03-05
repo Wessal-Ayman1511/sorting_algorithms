@@ -1,4 +1,6 @@
 #include "sort.h"
+
+
 /**
  * selection_sort - sort array
  * @array: array
@@ -9,15 +11,15 @@ void selection_sort(int *array, size_t size)
 	size_t minIdx, i, j;
 	int tmp;
 
-	if(!array || !size || size < 2)
+	if (!array || !size || size < 2)
 	return;
 
-	for(i = 0; i < size - 1; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 		minIdx = i;
-		for(j = i + 1 ; j < size ; j++)
+		for (j = i + 1 ; j < size ; j++)
 		{
-			if(array[j] < array[minIdx])
+			if (array[j] < array[minIdx])
 			{
 				minIdx = j;
 			}
@@ -27,7 +29,7 @@ void selection_sort(int *array, size_t size)
 			tmp = array[i];
 			array[i] = array[minIdx];
 			array[minIdx] = tmp;
-			print_array(array, size); 
+			print_array(array, size);
 		}
 
 
