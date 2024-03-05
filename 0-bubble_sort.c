@@ -1,10 +1,9 @@
 #include "sort.h"
 /**
- * bubble_sort- function that bubble sort the array
- * @array: input
- * @size: input
- * Return: void
-*/
+ * bubble_sort - sort array
+ * @array: arr
+ * @size: arr size
+ */
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
@@ -12,10 +11,9 @@ void bubble_sort(int *array, size_t size)
 
 	if (!array || !size)
 		return;
-
-	for (i = 0 ; i < size  ; i++)
+	for (i = 0; i < size - 1 ; i++)
 	{
-		for (j = 0 ; j < size - 1 ; j++)
+		for (j = 0; j < size - i - 1; j++)
 		{
 			if (array[j] > array[j + 1])
 			{
