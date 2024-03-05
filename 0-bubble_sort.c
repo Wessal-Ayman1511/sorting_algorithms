@@ -1,4 +1,6 @@
 #include "sort.h"
+
+
 /**
  * bubble_sort - function that bubble sort the array
  * @array: input
