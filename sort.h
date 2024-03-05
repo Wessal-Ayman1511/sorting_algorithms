@@ -29,4 +29,6 @@ void insertion_sort_list(listint_t **list);
 listint_t *swaping(listint_t *node, listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+int partition(int *arr, int l, int h, size_t size);
+void quicksort(int *arr, int l, int h, size_t size);
 #endif

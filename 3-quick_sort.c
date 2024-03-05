@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * partition - scans a partition of an array of integers 
+ * partition - scans a partition of an array of integers
  * @arr: input
  * @l: input
  * @h: input
@@ -35,10 +35,10 @@ int partition(int *arr, int l, int h, size_t size)
 }
 
 /**
- * quicksort - recursively sorts array 
+ * quicksort - recursively sorts array
  * @arr: input
- * @low: input
- * @high: input
+ * @l: input
+ * @h: input
  * @size: array size
  */
 void quicksort(int *arr, int l, int h, size_t size)
@@ -54,7 +54,7 @@ void quicksort(int *arr, int l, int h, size_t size)
 }
 
 /**
- * quick_sort - sorts an array 
+ * quick_sort - sorts an array
  * @array: input
  * @size: input
  */
